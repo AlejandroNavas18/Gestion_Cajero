@@ -1,17 +1,19 @@
 package Logica;
 
+import Modelo.Pojos.Tarjeta;
+
 public class OperacionesBancarias {
+private Tarjeta tarjeta;
 
-
-    public void consultarSaldo(){
-
-    }
-
-    public void retiraEfectivo(double cantidad){
+    public void consultarSaldo(Tarjeta tarjeta){
 
     }
 
-    public void ingresarEfectivo(double cantidad){
+    public void retirarEfectivo(int cantidad){
+
+    }
+
+    public void ingresarEfectivo(int cantidad){
 
     }
 }

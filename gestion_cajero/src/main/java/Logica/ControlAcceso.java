@@ -1,17 +1,21 @@
 package Logica;
 
+import java.util.ArrayList;
+
+import Modelo.Pojos.Tarjeta;
+
 public class ControlAcceso {
+    private ArrayList<Tarjeta> tarjetas = new ArrayList<>();
 
+    public boolean verificarTarjeta(int numTarjeta, int clave) {
+        boolean pinCorrecto = false;
 
-    public void verificarTarjeta(int numTarjeta){
-
+        return pinCorrecto;
     }
 
-    public void verificarClave(int clave){
+    public boolean comprobarSaldo(Tarjeta tarjeta) {
+        boolean saldoCorrecto=false;
 
-    }
-
-    public void comprobarSaldo(){
-        
+        return saldoCorrecto;
     }
 }
