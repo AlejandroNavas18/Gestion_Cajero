@@ -35,6 +35,14 @@ public class Tarjeta {
         this.saldo = saldo;
     }
 
+    @Override
+    public String toString() {
+        return "Tarjeta{" +
+                "numTarjeta=" + numTarjeta +
+                ", clave=" + clave +
+                ", saldo=" + saldo +
+                '}';
+    }
 
    
 }
