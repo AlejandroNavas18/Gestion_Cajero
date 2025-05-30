@@ -20,7 +20,6 @@ public class Main {
             System.out.println("Por seguridad, el programa se cerrará.");
             System.exit(0); // Fin del programa
         } catch (SaldoNoValidoException e) {
-            e.printStackTrace();
         }
     }
 }

@@ -6,16 +6,12 @@ import Excepciones.SaldoNoValidoException;
 import Excepciones.TarjetaIncorrectaException;
 import Logica.ControlAcceso;
 import Logica.OperacionesBancarias;
-import Modelo.Dao.DaoCliente;
-import Modelo.Pojos.Cliente;
 import Modelo.Pojos.Tarjeta;
 
 public class Cajero {
-    DaoCliente daocliente = new DaoCliente();
     ControlAcceso controlAcceso = new ControlAcceso();
     OperacionesBancarias operacionesbancarias = new OperacionesBancarias();
     Tarjeta tarjeta;
-    Cliente cliente; // Asumiendo que Cliente es una clase que contiene la tarjeta
     Scanner scanner = new Scanner(System.in);
 
     public Cajero() {

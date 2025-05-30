@@ -1,10 +1,11 @@
 package Logica;
 
 import java.util.ArrayList;
+
 import Modelo.Pojos.Tarjeta;
 
 public class ControlAcceso {
-    private ArrayList<Tarjeta> tarjetas = new ArrayList<>();
+    private final ArrayList<Tarjeta> tarjetas = new ArrayList<>();
 
     public ControlAcceso() {
         // Inicializar con algunas tarjetas de ejemplo
@@ -17,7 +18,7 @@ public class ControlAcceso {
         boolean tarjetaCorrecta = false;
         for (Tarjeta tarjeta : tarjetas) {
             if (tarjeta.getNumTarjeta() == numTarjeta && tarjeta.getClave() == clave) {
-                return tarjetaCorrecta = true; 
+                 tarjetaCorrecta = true; 
             }
         }
 
